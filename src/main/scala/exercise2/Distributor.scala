@@ -127,8 +127,8 @@ class RegDistributor[D <: Data](dtype : D, num : Int) extends Distributor(dtype,
 class ComboDistributor[D <: Data](dtype : D, num : Int) extends Distributor(dtype, num)
 {
 
- val s0 :: s1 :: Nil = Enum(2)
- val state = RegInit(init = s0)
+// val s0 :: s1 :: Nil = Enum(2)
+// val state = RegInit(init = s0)
 
   val allreadyVec = Wire(Vec(num,Bool()))
   val allready = allreadyVec.asUInt
